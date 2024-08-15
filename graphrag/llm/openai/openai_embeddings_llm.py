@@ -35,6 +35,7 @@ class OpenAIEmbeddingsLLM(BaseLLM[EmbeddingInput, EmbeddingOutput]):
         }
         embedding = await self.client.embeddings.create(
             input=input,
+            encoding_format="float",
             **args,
         )
         return [d.embedding for d in embedding.data]

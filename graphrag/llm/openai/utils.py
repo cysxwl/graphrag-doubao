@@ -75,7 +75,7 @@ def get_completion_cache_args(configuration: OpenAIConfiguration) -> dict:
         "presence_penalty": configuration.presence_penalty,
         "top_p": configuration.top_p,
         "max_tokens": configuration.max_tokens,
-        "n": configuration.n,
+#        "n": configuration.n,
     }
 
 
